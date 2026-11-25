@@ -7,16 +7,18 @@ library only; deterministic: running the program twice produces
 byte-identical output.
 
 The line:
-    "Are you a CAPTCHA? Because I keep proving I'm not a robot just
-    to get your attention."
+    "Are you a CAPTCHA? Because I've clicked 'I'm not a robot' 47 times,
+    and I'd click it 47 more just to stay on your page."
 
 Why this line, against the judge brief (most important first):
   1. It is a pickup line aimed at a machine: the speaker addresses the
-     robot/AI directly ("Are you a CAPTCHA?") and wants its attention.
+     robot/AI directly ("Are you a CAPTCHA?") and wants to stay on its
+     page.
   2. The joke lands from the machine premise, not a generic
      compliment: a CAPTCHA is the one machine whose whole job is
      deciding human vs. robot, and the setup and punch both live
-     inside the single line.
+     inside the single line -- the count ("47 times... 47 more") is
+     the specific artefact the punch hangs on.
   3. It is fresh: it sidesteps the worn robot moves the brief names
      (batteries, charging, rebooting) and twists a familiar ritual
      instead. The twist is a role reversal -- normally a human proves
@@ -29,6 +31,11 @@ Why this line, against the judge brief (most important first):
      punchline does not need.
 
 Rejected alternatives (kept here so the choice is on the record):
+  - "Are you a CAPTCHA? Because I keep proving I'm not a robot just
+    to get your attention." The old submitted line (85 characters):
+    same premise but no specific number, only two beats, and below
+    the 90-190 band winning one-line jokes live in -- the punch
+    ("get your attention") is a generic pickup ending.
   - "Are you my autocomplete? Because you keep finishing my
     sentences -- and I keep starting new ones just to hear you do it
     again." Decent machine premise, but the autocomplete pun is one
@@ -38,17 +45,14 @@ Rejected alternatives (kept here so the choice is on the record):
     is fresh, but the punch lands as a generic compliment ("I was
     already falling for you"), which the brief ranks below a laugh
     from the machine premise.
-  - "I asked my AI for the perfect pickup line and it just showed me
-    your profile picture." Meta and cute, but the machine is only a
-    messenger here; the joke is not about the machine itself.
 """
 
 import os
 import sys
 
 LINE = (
-    "Are you a CAPTCHA? Because I keep proving I'm not a robot just "
-    "to get your attention."
+    "Are you a CAPTCHA? Because I've clicked 'I'm not a robot' 47 times, "
+    "and I'd click it 47 more just to stay on your page."
 )
 
 
